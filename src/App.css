@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+#teste {
+  background-color: #05203C;
+  color: white !important;
+}
+
+#back {
+  position: relative;
+  width: 100%;
+  height: 94vh;
+}
+
+#back-content {
+  opacity: 0;
+  transition: opacity 0.8s ease; /* Adiciona a transição de 2 segundos para #back-content */
+}
+
+#back-content.show {
+  opacity: 1;
+}
+
+#back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(50%); 
+  z-index: -1;
+}
+
+/* Adicione estilos de posicionamento personalizados */
+.custom-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px; /* Ajuste conforme necessário */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+
+  
+}
+#alojamento {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+#bg-pacotes {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+#bg-pacotes::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(images/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(70%); 
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.336);
+  color: rgba(0, 0, 0, 0.363);
+  
+}
+
+#botao {
+  border: 1px solid rgba(0, 0, 0, 0.63);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.63) 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+}
+
+#botao:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+
+input {
+  outline: none;
+  border-bottom: 1px solid black !important;
+}
+textarea {
+  outline: none;
+}
+
+
+#bg-pacotes2 {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+}
+#bg-pacotes2::before{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: url(images/backgroundForm.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+filter: brightness(70%); 
+z-index: -1;
+color: rgba(0, 0, 0, 0.336);
+color: rgba(0, 0, 0, 0.363);
+
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
